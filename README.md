@@ -26,7 +26,23 @@ Her bir sınıf, işlemi işleyebilecek kapasitedeyse işlemi gerçekleştirir, 
 
 - [Banka Yönetim Ekranı](https://github.com/user-attachments/assets/53c7fd61-c00b-40ee-8fee-4fc30688bc52)
 -----------------------------------------------------------------------
+## 🌕 PROJE 2 - ÜRÜN YÖNETİM SİSTEMİ: CQRS DESIGN PATTERN
 
+Bu proje, ***CQRS (Command Query Responsibility Segregation)*** tasarım desenini kullanarak geliştirilmiş bir ürün yönetim sistemidir. Uygulama, ürün işlemleri için **Komut (Command)** ve **Sorgu (Query)** olmak üzere iki ana sorumluluk alanına ayrılmış bir iş akışını simüle etmektedir.
+
+Projede, ürün yönetimi için farklı işlemleri yöneten beş temel işlem bulunmaktadır: **Ürün Ekleme**, **Ürün Güncelleme**, **Ürün Silme**, **Ürün Listeleme** ve **Ürün Detay Görüntüleme**. Bu işlemler CQRS tasarım deseni ile ayrı sorumluluk alanlarına ayrılmıştır.
+
+- **Ürün Ekleme (Command)**: Sisteme yeni bir ürün eklemek için kullanılır.
+- **Ürün Güncelleme (Command)**: Mevcut bir ürün bilgisini güncellemek için kullanılır.
+- **Ürün Silme (Command)**: Belirli bir ürünü sistemden kaldırmak için kullanılır.
+- **Ürün Listeleme (Query)**: Sistemde bulunan tüm ürünleri listelemek için kullanılır.
+- **Ürün Detay Görüntüleme (Query)**: Belirli bir ürünün detaylarını görmek için kullanılır.
+
+Her bir sınıf, işlemi kendi sorumluluk alanına uygun şekilde ele alır. **Command** sınıfları, sistemi değiştiren işlemleri işlerken, **Query** sınıfları yalnızca veri okuma işlemlerini gerçekleştirir. Bu ayrım sayesinde, iş akışı düzenli ve esnek bir şekilde yönetilir, uygulamanın performansı ve sürdürülebilirliği artırılır. Sistemde her işlem, yalnızca kendi belirlenen sorumluluğunu yerine getirerek bakım kolaylığı ve ölçeklenebilirlik sağlar.
+
+- [Ürün Yönetim Sistemi](https://github.com/user-attachments/assets/8e9e7502-ca90-4f1b-9306-668a49397a99)
+
+-----------------------------------------------------------------------
 #### 📦 Veri Tabanı Yedek Dosyaları
 
 Bu proje serisine ait tüm veri tabanı yedek dosyalarını aşağıdaki bağlantıdan toplu halde indirebilirsiniz. Yedek dosyaları, projeleri incelemeniz ve yerel ortamınızda çalıştırabilmeniz için gerekli tüm veritabanı tablolarını ve verilerini içermektedir.
