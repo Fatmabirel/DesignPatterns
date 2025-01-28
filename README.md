@@ -43,6 +43,25 @@ Her bir sınıf, işlemi kendi sorumluluk alanına uygun şekilde ele alır. **C
 - [Ürün Yönetim Sistemi](https://github.com/user-attachments/assets/8e9e7502-ca90-4f1b-9306-668a49397a99)
 
 -----------------------------------------------------------------------
+
+## 🌕 PROJE 3 - NETFLIX ÜYELİK PAKETİ YÖNETME EKRANI: TEMPLATE METHOD DESIGN PATTERN
+
+Bu proje, ***Template Method Design Pattern*** kullanılarak geliştirilmiş bir Netflix üyelik paketi yönetme ekranıdır. Uygulama, üyelik planlarının özelliklerini dinamik olarak yönetmek ve görüntülemek için esnek bir yapı sunar.
+
+Template Method Design Pattern, üyelik planları için ortak bir iş akışını temel sınıfta tanımlar. Alt sınıflar bu iş akışını özelleştirerek farklı plan türlerini destekler. Uygulamanın temelinde, üyelik planlarının ortak işlemlerini barındıran **NetflixPlans** isimli bir temel sınıf yer almaktadır. Bu temel sınıf, tüm plan türleri için ortak bir iş akışını tanımlar. Plan türleri, **BasicPlans**, **StandartPlans** ve **UltraPlans** isimli alt sınıflar aracılığıyla temsil edilir.
+
+- **Temel Sınıf (NetflixPlans):** Üyelik planlarının ortak işlemlerini barındırır.  
+- **Alt Sınıflar:**  
+  - **BasicPlans:** Temel Plan özelliklerini içerir.  
+  - **StandartPlans:** Standart Plan özelliklerini içerir.  
+  - **UltraPlans:** Ultra Plan özelliklerini içerir.
+    
+ Her bir alt sınıf, temel sınıfın sunduğu şablon yöntemlerini özelleştirerek farklı planların özelliklerini belirler ve yönetir. Bu yapı sayesinde, uygulama hem esneklik hem de genişletilebilirlik sağlar.
+ 
+- [Netflix Üyelik Paketi Yönetme Ekranı](https://github.com/user-attachments/assets/76c6589c-eb3b-460c-9a0d-e4a07f58293b)
+
+-----------------------------------------------------------------------
+
 #### 📦 Veri Tabanı Yedek Dosyaları
 
 Bu proje serisine ait tüm veri tabanı yedek dosyalarını aşağıdaki bağlantıdan toplu halde indirebilirsiniz. Yedek dosyaları, projeleri incelemeniz ve yerel ortamınızda çalıştırabilmeniz için gerekli tüm veritabanı tablolarını ve verilerini içermektedir.
