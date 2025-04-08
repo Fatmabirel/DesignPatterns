@@ -62,12 +62,32 @@ Template Method Design Pattern, üyelik planları için ortak bir iş akışın�
 
 -----------------------------------------------------------------------
 
+## 🌕 PROJE 4- DERGİ ABONELİK SİSTEMİ: OBSERVER DESIGN PATTERN
+
+Bu proje, ***Observer Design Pattern*** (Gözlemci Tasarım Deseni) kullanılarak geliştirilmiş bir dergi abonelik sistemidir. Uygulama, bir dergi yayıncısının abonelere yeni sayı yayımlandığında otomatik bildirim göndermesini simüle eder.
+
+Observer Design Pattern, bir nesnenin (subject) durumundaki değişikliklerin, bu nesneye abone olan diğer nesnelere (observers) otomatik olarak bildirildiği bir yapıdır. Bu proje, yazılımda gevşek bağlı (loosely coupled) bileşenler oluşturmak için kullanılmıştır.
+
+Projede üç ana bileşen yer alır:
+
+- **Publisher (Yayıncı):** Yeni bir dergi sayısı yayınlandığında tüm abonelere bildirim gönderir.  
+- **Subscriber (Abone):** Sisteme abone olan kullanıcıları temsil eder. Her yeni sayı yayınlandığında bilgilendirilirler.  
+- **Magazine:** Dergi içeriğini temsil eder ve yayımlanan yeni sayılar üzerinden işlemler yapılır.
+
+İşleyiş şu şekilde özetlenebilir:
+1. Aboneler sisteme kayıt olur.
+2. Yayıncı yeni bir sayı yayınladığında, sisteme kayıtlı tüm abonelere otomatik olarak bildirim gider.
+3. Aboneler, bildirim aracılığıyla yayımlanan yeni sayıyı görüntüleyebilir.
+
+Bu yapı sayesinde sistem genişletilebilir, yeni aboneler dinamik olarak eklenebilir veya çıkarılabilir ve yayıncı sınıfı ile abone sınıfları arasında sıkı bağımlılık oluşmaz.
+
+- [Dergi Abonelik Sistemi](https://github.com/user-attachments/assets/8885f23e-b4c0-49e0-970e-b464dec91e36)
+
+-----------------------------------------------------------------------
 #### 📦 Veri Tabanı Yedek Dosyaları
 
 Bu proje serisine ait tüm veri tabanı yedek dosyalarını aşağıdaki bağlantıdan toplu halde indirebilirsiniz. Yedek dosyaları, projeleri incelemeniz ve yerel ortamınızda çalıştırabilmeniz için gerekli tüm veritabanı tablolarını ve verilerini içermektedir.
 
 [**Veri Tabanı Yedek Dosyalarını İndir (ZIP)**](https://drive.google.com/file/d/19i26qy_iTlNNk7_-jTYTxd22AYsn9sDx/view?usp=sharing)
-
------------------------------------------------------------------------
 
 Görüşürüz 🎉
